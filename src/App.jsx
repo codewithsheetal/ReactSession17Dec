@@ -7,14 +7,20 @@ import Second from './component/Myfile'
 import Sec from './Sec'
 import Conditional from './component/Conditional'
 import JsxRule from './component/JsxRule'
+import Component from './component/Component'
+import Arrowcomp from './component/Arrowcomp'
+import Event from './component/Event'
 
 function App() {
   
   
   return (
     <>
-    <JsxRule/>
-    <Conditional/>
+    
+    {/* <JsxRule/>
+    <Conditional/> */}
+    {/* <Component/> */}
+    <Event/>
      
     </>
   )
