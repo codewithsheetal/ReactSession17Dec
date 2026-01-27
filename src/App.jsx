@@ -10,6 +10,7 @@ import JsxRule from './component/JsxRule'
 import Component from './component/Component'
 import Arrowcomp from './component/Arrowcomp'
 import Event from './component/Event'
+import StateExample from './component/StateExample'
 
 function App() {
   
@@ -20,7 +21,8 @@ function App() {
     {/* <JsxRule/>
     <Conditional/> */}
     {/* <Component/> */}
-    <Event/>
+    {/* <Event/> */}
+    <StateExample/>
      
     </>
   )
