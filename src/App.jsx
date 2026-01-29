@@ -11,6 +11,7 @@ import Component from './component/Component'
 import Arrowcomp from './component/Arrowcomp'
 import Event from './component/Event'
 import StateExample from './component/StateExample'
+import Form from './component/Form/Form'
 
 function App() {
   
@@ -22,7 +23,8 @@ function App() {
     <Conditional/> */}
     {/* <Component/> */}
     {/* <Event/> */}
-    <StateExample/>
+    {/* <StateExample/> */}
+    <Form/>
      
     </>
   )
