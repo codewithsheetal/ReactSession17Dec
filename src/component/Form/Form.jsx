@@ -1,41 +1,47 @@
 import React, { useState } from 'react'
 
 function Form() {
-    const [name,setName]= useState("");
-    const [fname,setFname]= useState("");
-    const [isSubmitted,setIssubmitted]= useState(false);
-    const [fnameSubmitted,setFnameSubmitted]=useState("");
+    const [name, setName] = useState("");
+    const [fname, setFname] = useState("");
+    const [isSubmitted, setIssubmitted] = useState(false);
+    const [fnameSubmitted, setFnameSubmitted] = useState("");
 
-    let fnamenormal="";
+    let fnamenormal = "";
 
-    function handleSubmit(e){
+    function handleSubmit(e) {
         e.preventDefault();
         // console.log(fname);
         setIssubmitted(true);
         setFnameSubmitted(fname);
-        fnamenormal=fname;
+        fnamenormal = fname;
         console.log(fnamenormal);
         setFname("");
 
     }
 
-    function handleNormalClick(){
+    function handleNormalClick() {
         console.log("hello");
     }
 
     return (
         <>
-        {/* <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
+            {/* <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
         <h1>{name}</h1> */}
 
-        <form onSubmit={handleSubmit}>
-            <input type="text"  value={fname} onChange={(e)=>setFname(e.target.value)}/>
-            <button type="submit">Submit</button>
-            <button type="button" onClick={handleNormalClick}>Normal button</button>
-            <button type="button" onClick={()=>console.log("normal button 2")}>Normal button2</button>
-        </form>
+            <form onSubmit={handleSubmit}>
+                <input type="text" value={fname} onChange={(e) => setFname(e.target.value)} />
+                <button type="submit">Submit</button>
+                <button type="button" onClick={handleNormalClick}>Normal button</button>
+                <button type="button" onClick={() => console.log("normal button 2")}>Normal button2</button>
+            </form>
 
-        {isSubmitted && <h1>your first name is : {fnamenormal}</h1>}
+            {isSubmitted && 
+            <>
+                <h1>your first name is : {fnamenormal}</h1>
+                <h1>your first name is : {fnamenormal}</h1>
+                <h1>your first name is : {fnamenormal}</h1>
+            </>
+            }
         </>
     )
 }

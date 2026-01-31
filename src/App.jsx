@@ -12,6 +12,10 @@ import Arrowcomp from './component/Arrowcomp'
 import Event from './component/Event'
 import StateExample from './component/StateExample'
 import Form from './component/Form/Form'
+import RadioButton from './component/Form/RadioButton'
+import Checkbox from './component/Form/Checkbox'
+import DropDown from './component/Form/DropDown'
+import List from './component/List/List'
 
 function App() {
   
@@ -24,7 +28,15 @@ function App() {
     {/* <Component/> */}
     {/* <Event/> */}
     {/* <StateExample/> */}
-    <Form/>
+    {/* <Form/> */}
+    {/* <RadioButton/> */}
+
+    {/* <Checkbox/> */}
+
+    {/* <DropDown/> */}
+
+    <List/>
+
      
     </>
   )
