@@ -16,6 +16,7 @@ import RadioButton from './component/Form/RadioButton'
 import Checkbox from './component/Form/Checkbox'
 import DropDown from './component/Form/DropDown'
 import List from './component/List/List'
+import SortProductandFilter from './component/List/SortProductandFilter'
 
 function App() {
   
@@ -35,7 +36,9 @@ function App() {
 
     {/* <DropDown/> */}
 
-    <List/>
+    {/* <List/> */}
+
+    <SortProductandFilter/>
 
      
     </>
