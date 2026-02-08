@@ -17,6 +17,8 @@ import Checkbox from './component/Form/Checkbox'
 import DropDown from './component/Form/DropDown'
 import List from './component/List/List'
 import SortProductandFilter from './component/List/SortProductandFilter'
+import Parentprops from './props/passing props/Parentprops'
+import ParentComp from './props/propsandrender/ParentComp'
 
 function App() {
   
@@ -38,7 +40,10 @@ function App() {
 
     {/* <List/> */}
 
-    <SortProductandFilter/>
+    {/* <SortProductandFilter/> */}
+
+    {/* <Parentprops/> */}
+    {/* <ParentComp/> */}
 
      
     </>

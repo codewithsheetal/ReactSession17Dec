@@ -29,7 +29,9 @@ function SortProductandFilter() {
     let ztoaproduct = [...products]
     const sortZtoA = ztoaproduct.sort((a, b) => b.name.localeCompare(a.name)) //  A B --> -1 --> A , B A --> 1 --> A
 
-
+    const filterdproduct = products.filter((a,b)=>a.price>6000);
+    console.log(filterdproduct);
+    
     // 10000-5000 = 5000  ==> b then a
     // 4000-5000 = -1000  ==> a then b
 
@@ -46,7 +48,11 @@ function SortProductandFilter() {
                     <div key={item.id}>
                         <h3 >{item.id} - {item.name} - {item.price}</h3>
                         {/* <h2>{item.price}</h2> */}
+                      
+                        
                     </div>
+
+                  
 
 
                 ))
@@ -90,6 +96,18 @@ function SortProductandFilter() {
             <h2>sorted Z to A</h2>
             {
                 sortZtoA.map((item) => (
+                    <div key={item.id}>
+                        <h3 >{item.id} - {item.name} - {item.price}</h3>
+                        {/* <h2>{item.price}</h2> */}
+                    </div>
+
+
+                ))
+
+            }
+            <h2>sorted filtered product  </h2>
+            {
+                filterdproduct.map((item) => (
                     <div key={item.id}>
                         <h3 >{item.id} - {item.name} - {item.price}</h3>
                         {/* <h2>{item.price}</h2> */}
