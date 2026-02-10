@@ -19,6 +19,12 @@ import List from './component/List/List'
 import SortProductandFilter from './component/List/SortProductandFilter'
 import Parentprops from './props/passing props/Parentprops'
 import ParentComp from './props/propsandrender/ParentComp'
+import PropsParentco from './props/propschildren/PropsParentco'
+import ParentDefaultprops from './props/propsdefault/ParentDefaultprops'
+import InlineCSS from './CSSstyle/InlineCSS'
+import CSSasObject from './CSSstyle/CSSasObject'
+import Normalcss from './CSSstyle/Normalcss/Normalcss'
+import ModuleCss from './CSSstyle/cssmodules/ModuleCss'
 
 function App() {
   
@@ -45,7 +51,15 @@ function App() {
     {/* <Parentprops/> */}
     {/* <ParentComp/> */}
 
-     
+     {/* <PropsParentco/> */}
+
+     {/* <ParentDefaultprops/> */}
+
+     {/* css  */}
+     {/* <InlineCSS/> */}
+     {/* <CSSasObject/> */}
+     {/* <Normalcss/> */}
+     <ModuleCss/>
     </>
   )
 }

@@ -8,6 +8,7 @@ function ParentComp() {
     return (
         <>
         <ChildComp name={name} />
+        {/* <ChildComp name="sheetal" /> */}
         </>
     )
 }
