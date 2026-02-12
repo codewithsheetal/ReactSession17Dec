@@ -25,6 +25,9 @@ import InlineCSS from './CSSstyle/InlineCSS'
 import CSSasObject from './CSSstyle/CSSasObject'
 import Normalcss from './CSSstyle/Normalcss/Normalcss'
 import ModuleCss from './CSSstyle/cssmodules/ModuleCss'
+import DynamicCss from './CSSstyle/DynamicCss'
+import Tailwindcss from './CSSstyle/Tailwindcss'
+import RouteExample from './Routing/RouteExample'
 
 function App() {
   
@@ -59,7 +62,13 @@ function App() {
      {/* <InlineCSS/> */}
      {/* <CSSasObject/> */}
      {/* <Normalcss/> */}
-     <ModuleCss/>
+     {/* <ModuleCss/> */}
+
+     {/* <DynamicCss/> */}
+
+     {/* <Tailwindcss/> */}
+
+     <RouteExample/>
     </>
   )
 }

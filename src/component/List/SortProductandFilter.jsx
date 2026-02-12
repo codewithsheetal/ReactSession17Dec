@@ -51,6 +51,7 @@ function SortProductandFilter() {
                       
                         
                     </div>
+                    // <Product key={item.id} name={item.name} price={item.price}/>
 
                   
 
