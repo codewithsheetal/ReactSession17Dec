@@ -28,6 +28,9 @@ import ModuleCss from './CSSstyle/cssmodules/ModuleCss'
 import DynamicCss from './CSSstyle/DynamicCss'
 import Tailwindcss from './CSSstyle/Tailwindcss'
 import RouteExample from './Routing/RouteExample'
+import Dashboard from './Routing/PrivateRoute/Dashboard'
+import NavigateButton from './Routing/useNavigate/NavigateButton'
+import LazyLoading from './component/LazyLaoding/LazyLoading'
 
 function App() {
   
@@ -69,6 +72,8 @@ function App() {
      {/* <Tailwindcss/> */}
 
      <RouteExample/>
+     {/* <NavigateButton/> */}
+     {/* <LazyLoading/> */}
     </>
   )
 }

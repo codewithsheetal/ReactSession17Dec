@@ -47,6 +47,8 @@ function Event() {
 <button>submit</button>
 
         </form> */}
+
+        <h2>this is event comp</h2>
         </>
     )
 }
