@@ -31,6 +31,8 @@ import RouteExample from './Routing/RouteExample'
 import Dashboard from './Routing/PrivateRoute/Dashboard'
 import NavigateButton from './Routing/useNavigate/NavigateButton'
 import LazyLoading from './component/LazyLaoding/LazyLoading'
+import DynamicRoutingLink from './Routing/DynamicRoutingLink/DynamicRoutingLink'
+import ReducerInput from './useReducerhook/ReducerInput'
 
 function App() {
   
@@ -71,9 +73,14 @@ function App() {
 
      {/* <Tailwindcss/> */}
 
-     <RouteExample/>
+     {/* <RouteExample/> */}
      {/* <NavigateButton/> */}
      {/* <LazyLoading/> */}
+
+     {/* <DynamicRoutingLink/> */}
+
+     {/* Reducer */}
+     <ReducerInput/>
     </>
   )
 }

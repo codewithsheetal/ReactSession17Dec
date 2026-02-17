@@ -9,6 +9,7 @@ import Settings from './NestedRouting/Settings'
 import Login from './PrivateRoute/Login'
 import PrivateRoute from './PrivateRoute/PrivateRoute'
 import Dashboard from './PrivateRoute/Dashboard'
+import AccessDynamicRouting from './DynamicRoutingLink/AccessDynamicRouting'
 
 // lazy loading 
 const Contact =lazy(()=>import("../Routing/Contact"));
@@ -55,6 +56,8 @@ function RouteExample() {
                     <Route path="/contact" element={<Contact />} />
                 </Route>
 
+                {/* dynamic routing  */}
+                <Route path="/dynamic/:id" element={<AccessDynamicRouting/>}/>
             </Routes>
             </Suspense>
         </>
