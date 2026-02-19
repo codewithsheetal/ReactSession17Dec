@@ -23,6 +23,7 @@ function RouteExample() {
                 <Route path="/hello" element={<h1>hello this is hello route</h1>} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<h1>Page not found</h1>}/>
 
                 {/* nested route  */}
                 <Route path="/layout" element={<Layout />}>
@@ -44,7 +45,6 @@ function RouteExample() {
                 <Route path="/dashboard" element={
                     <PrivateRoute>
                         <Dashboard />
-
                     </PrivateRoute>
                 }
                 />

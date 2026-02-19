@@ -33,6 +33,8 @@ import NavigateButton from './Routing/useNavigate/NavigateButton'
 import LazyLoading from './component/LazyLaoding/LazyLoading'
 import DynamicRoutingLink from './Routing/DynamicRoutingLink/DynamicRoutingLink'
 import ReducerInput from './useReducerhook/ReducerInput'
+import CounterReducer from './useReducerhook/CounterReducer'
+import CounterAppusingReducer from './useReducerhook/CounterAppusingReducer'
 
 function App() {
   
@@ -80,7 +82,9 @@ function App() {
      {/* <DynamicRoutingLink/> */}
 
      {/* Reducer */}
-     <ReducerInput/>
+     {/* <ReducerInput/> */}
+     
+     <CounterAppusingReducer/>
     </>
   )
 }
