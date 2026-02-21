@@ -35,6 +35,10 @@ import DynamicRoutingLink from './Routing/DynamicRoutingLink/DynamicRoutingLink'
 import ReducerInput from './useReducerhook/ReducerInput'
 import CounterReducer from './useReducerhook/CounterReducer'
 import CounterAppusingReducer from './useReducerhook/CounterAppusingReducer'
+import SimpleUseEffect from './useEffect/SimpleUseEffect'
+import ParentuseEffect from './useEffect/ParentChild/ParentuseEffect'
+import MountUnmount from './useEffect/ReactLifeCycle/MountUnmount'
+import InterviewUseEffect from './useEffect/InterviewUseEffect'
 
 function App() {
   
@@ -84,7 +88,14 @@ function App() {
      {/* Reducer */}
      {/* <ReducerInput/> */}
      
-     <CounterAppusingReducer/>
+     {/* <CounterAppusingReducer/> */}
+
+     {/* useEffect  */}
+     {/* <SimpleUseEffect/> */}
+     {/* <ParentuseEffect/> */}
+     {/* <MountUnmount/> */}
+
+     <InterviewUseEffect/>
     </>
   )
 }
