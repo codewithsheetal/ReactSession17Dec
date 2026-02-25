@@ -39,6 +39,9 @@ import SimpleUseEffect from './useEffect/SimpleUseEffect'
 import ParentuseEffect from './useEffect/ParentChild/ParentuseEffect'
 import MountUnmount from './useEffect/ReactLifeCycle/MountUnmount'
 import InterviewUseEffect from './useEffect/InterviewUseEffect'
+import SimpleuseRef from './useRef/SimpleuseRef'
+import FormDataUseRef from './useRef/FormDataUseRef'
+import LastValue from './useRef/LastValue'
 
 function App() {
   
@@ -95,7 +98,12 @@ function App() {
      {/* <ParentuseEffect/> */}
      {/* <MountUnmount/> */}
 
-     <InterviewUseEffect/>
+     {/* <InterviewUseEffect/> */}
+
+     {/* useRef  */}
+     {/* <SimpleuseRef/> */}
+     {/* <FormDataUseRef/> */}
+     <LastValue/>
     </>
   )
 }
