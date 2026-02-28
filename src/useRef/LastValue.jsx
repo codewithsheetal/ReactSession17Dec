@@ -4,7 +4,7 @@ function LastValue() {
     const [count,setCount]=useState(0);
     const prevCount = useRef(null); // stores value without re-rendering
     console.log("render");
-
+        
     //save the current value after render , so next render can use it as prev value
     //runs after render
     useEffect(()=>{

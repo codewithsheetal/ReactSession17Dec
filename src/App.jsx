@@ -42,6 +42,11 @@ import InterviewUseEffect from './useEffect/InterviewUseEffect'
 import SimpleuseRef from './useRef/SimpleuseRef'
 import FormDataUseRef from './useRef/FormDataUseRef'
 import LastValue from './useRef/LastValue'
+import Grandparentcontextcomp from './ContextAPI/Grandparentcontextcomp'
+import FamilyContext from './ContextAPI/FamilyContext'
+import ChildContextcomp from './ContextAPI/ChildContextcomp'
+import { SeprateProvider } from './ContextAPI/SeprateContext'
+import Parentcontextcomp from './ContextAPI/Parentcontextcomp'
 
 function App() {
   
@@ -103,7 +108,25 @@ function App() {
      {/* useRef  */}
      {/* <SimpleuseRef/> */}
      {/* <FormDataUseRef/> */}
-     <LastValue/>
+     {/* <LastValue/> */}
+
+      {/* ContextAPI  */}
+     {/* <Grandparentcontextcomp/> */}
+
+     {/* <FamilyContext.Provider value ="sheetal"> */}
+     {/* <FamilyContext.Provider value ={{name:"sheetal", id:10}}>
+        <ChildContextcomp/>
+        
+     </FamilyContext.Provider> */}
+
+     <SeprateProvider>
+      <Parentcontextcomp/>
+
+     </SeprateProvider>
+
+     
+
+
     </>
   )
 }
