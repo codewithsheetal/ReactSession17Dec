@@ -47,6 +47,9 @@ import FamilyContext from './ContextAPI/FamilyContext'
 import ChildContextcomp from './ContextAPI/ChildContextcomp'
 import { SeprateProvider } from './ContextAPI/SeprateContext'
 import Parentcontextcomp from './ContextAPI/Parentcontextcomp'
+import ToggleUsedcomp from './customhook/ToggleUsedcomp'
+import Counterhookused from './customhook/Counter/Counterhookused'
+import LocalStorage from './localstorage/LocalStorage'
 
 function App() {
   
@@ -119,13 +122,17 @@ function App() {
         
      </FamilyContext.Provider> */}
 
-     <SeprateProvider>
+     {/* <SeprateProvider>
       <Parentcontextcomp/>
 
-     </SeprateProvider>
+     </SeprateProvider> */}
 
+      {/* customhook */}
      
+     {/* <ToggleUsedcomp/>
+     <Counterhookused/> */}
 
+      {/* <LocalStorage/> */}
 
     </>
   )
