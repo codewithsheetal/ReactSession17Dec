@@ -50,6 +50,8 @@ import Parentcontextcomp from './ContextAPI/Parentcontextcomp'
 import ToggleUsedcomp from './customhook/ToggleUsedcomp'
 import Counterhookused from './customhook/Counter/Counterhookused'
 import LocalStorage from './localstorage/LocalStorage'
+import LoaderError from './loaderanderror/LoaderError'
+import Loaderusedincomp from './loaderanderror/customhookloader/Loaderusedincomp'
 
 function App() {
   
@@ -133,6 +135,10 @@ function App() {
      <Counterhookused/> */}
 
       {/* <LocalStorage/> */}
+
+      {/* loader and error  */}
+      {/* <LoaderError/> */}
+      <Loaderusedincomp/>
 
     </>
   )
