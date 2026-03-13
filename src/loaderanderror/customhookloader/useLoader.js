@@ -29,13 +29,3 @@ export default function useLoader(){
 
 }
 
-// product.js
-// export default const products=
-// [{
-
-// },
-// {
-
-// }]
-
-// import products from './product'

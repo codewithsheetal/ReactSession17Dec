@@ -52,6 +52,11 @@ import Counterhookused from './customhook/Counter/Counterhookused'
 import LocalStorage from './localstorage/LocalStorage'
 import LoaderError from './loaderanderror/LoaderError'
 import Loaderusedincomp from './loaderanderror/customhookloader/Loaderusedincomp'
+import ParentREactmemo from './Optimization/ReactMemo/ParentREactmemo'
+import Parentcallback from './Optimization/useCallBack/Parentcallback'
+import Parentusememo from './Optimization/useMemo/dataobj/Parentusememo'
+import ComplexCal from './Optimization/useMemo/dataobj/ComplexCal'
+import GetProductlits from './onefiledata/GetProductlits'
 
 function App() {
   
@@ -138,7 +143,17 @@ function App() {
 
       {/* loader and error  */}
       {/* <LoaderError/> */}
-      <Loaderusedincomp/>
+      {/* <Loaderusedincomp/> */}
+
+      {/* <ParentREactmemo/> */}
+
+      {/* <Parentcallback/> */}
+
+      {/* <Parentusememo/> */}
+
+      {/* <ComplexCal/> */}
+
+      <GetProductlits/>
 
     </>
   )
