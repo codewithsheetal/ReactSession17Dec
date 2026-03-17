@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "name": "Sheetalaa",
+      "email": "sheetal@gmail.in",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "sanvi",
+      "email": "sanvi@gmail.com"
+    },
+    {
+      "name": "patelaa",
+      "email": "xuz@gmail.com",
+      "id": "3"
+    },
+    {
+      "name": "ajaya",
+      "email": "a@a.in",
+      "id": "86a9"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Laptop",
+      "price": 50000,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": "2",
+      "title": "Mobile",
+      "price": 20000,
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

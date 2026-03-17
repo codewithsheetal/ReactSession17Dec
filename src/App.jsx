@@ -57,6 +57,9 @@ import Parentcallback from './Optimization/useCallBack/Parentcallback'
 import Parentusememo from './Optimization/useMemo/dataobj/Parentusememo'
 import ComplexCal from './Optimization/useMemo/dataobj/ComplexCal'
 import GetProductlits from './onefiledata/GetProductlits'
+import GetAPIdata from './API/GetAPIdata'
+import PostAPI from './API/PostAPI'
+import EditAPI from './API/EditAPI'
 
 function App() {
   
@@ -153,7 +156,11 @@ function App() {
 
       {/* <ComplexCal/> */}
 
-      <GetProductlits/>
+      {/* <GetProductlits/> */}
+
+      {/* <GetAPIdata/> */}
+      {/* <PostAPI/> */}
+      <EditAPI/>
 
     </>
   )
