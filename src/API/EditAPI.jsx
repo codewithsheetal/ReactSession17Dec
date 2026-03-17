@@ -5,8 +5,8 @@ import EditFormdata from './EditFormdata';
 function EditAPI() {
     const [user, setUser] = useState([])
     const [error, setError] = useState("");
-    const [selectedUser,setSelectedUser]= useState();
-    const [msg,setMsg]=useState("")
+    const [selectedUser, setSelectedUser] = useState();
+    const [msg, setMsg] = useState("")
 
     useEffect(() => {
         const getUser = async () => {
@@ -23,46 +23,49 @@ function EditAPI() {
         getUser();
     }, [])
 
-    const handleUpdate =(updatedUser)=>{
+    const handleUpdate = (updatedUser) => {
         // if match -> replace with updated user
         //else-> keep original user
-        setUser((prev)=>
-        prev.map((u)=>
-            u.id=== updatedUser.id ? updatedUser: u
-        ))
+        setUser((prev) =>
+            prev.map((u) =>
+                u.id === updatedUser.id ? updatedUser : u
+            ))
         setMsg("data updated")
         setSelectedUser(null)
     }
 
-    const handleDelete = async (id)=>{
-        try{
+    const handleDelete = async (id) => {
+        try {
             await deleteUser(id);
-            
+            //user ui 
+            setUser((prev) => prev.filter((u) => u.id !== id));
+            setMsg("data deleted")
+
         }
-        catch(error){
+        catch (error) {
             console.log("oops");
-            
+
         }
     }
     return (
         <>
-        <ul>
-             {user.map((u)=>(
-            <li key ={u.id}
-            onClick={()=>setSelectedUser(u)}
-            >{u.name}- {u.email} 
-            <button onClick={(e)=>{
-                e.stopPropagation();
-                handleDelete(u.id);
-            }}>delete</button>
-            </li>
-        ))}
-        </ul>
+            <ul>
+                {user.map((u) => (
+                    <li key={u.id}
+                        onClick={() => setSelectedUser(u)}
+                    >{u.name}- {u.email}
+                        <button onClick={(e) => {
+                            e.stopPropagation();
+                            handleDelete(u.id);
+                        }}>delete</button>
+                    </li>
+                ))}
+            </ul>
 
-        {selectedUser && 
-            <EditFormdata user = {selectedUser} onUpdate={handleUpdate}/>
-        }
-        {msg && <p>{msg}</p>}
+            {selectedUser &&
+                <EditFormdata user={selectedUser} onUpdate={handleUpdate} />
+            }
+            {msg && <p>{msg}</p>}
         </>
     )
 }
