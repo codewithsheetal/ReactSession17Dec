@@ -21,14 +21,14 @@ function EditAPI() {
             }
         }
         getUser();
-    }, [user])
+    }, [])
 
     const handleUpdate =(updatedUser)=>{
         // if match -> replace with updated user
         //else-> keep original user
         setUser((prev)=>
         prev.map((u)=>
-            u.id=== updateUser.id ? updateUser: u
+            u.id=== updatedUser.id ? updatedUser: u
         ))
         setMsg("data updated")
         setSelectedUser(null)
