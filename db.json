@@ -1,23 +1,18 @@
 {
   "users": [
     {
-      "name": "Sheetalaa",
-      "email": "sheetal@gmail.in",
+      "name": "Sheetal",
+      "email": "sheetal@gmail.com",
       "id": "1"
     },
     {
-      "id": "2",
       "name": "sanvi",
-      "email": "sanvi@gmail.com"
+      "email": "sanvi@gmail.com",
+      "id": "2"
     },
     {
-      "name": "patelass",
-      "email": "xuz@gmail.com",
-      "id": "3"
-    },
-    {
-      "name": "ajayass",
-      "email": "a@a.in",
+      "name": "ajay",
+      "email": "ajay@a.com",
       "id": "86a9"
     }
   ],

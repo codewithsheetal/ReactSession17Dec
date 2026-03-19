@@ -1,0 +1,17 @@
+Update API 
+steps 
+	1) List display from api 
+	2) Update form 
+	3) Auto fill (selected user's value)
+	4) New data api update 
+	5) Update UI 
+
+
+Delete API 
+steps
+
+	1) List display from api
+	2) Selected user id (delete)
+	3) Delete data from API
+	4) UI update 
+	

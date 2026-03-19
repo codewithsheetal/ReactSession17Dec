@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { deleteUser, fetchUsers, updateUser } from './api';
+import { deleteUser, fetchUsers } from './api';
 import EditFormdata from './EditFormdata';
 
 function EditAPI() {
     const [user, setUser] = useState([])
     const [error, setError] = useState("");
-    const [selectedUser, setSelectedUser] = useState();
-    const [msg, setMsg] = useState("")
+    const [selectedUser, setSelecteduser] = useState("");
+    const [msg,setMsg]=useState("")
+
 
     useEffect(() => {
         const getUser = async () => {
@@ -24,47 +25,51 @@ function EditAPI() {
     }, [])
 
     const handleUpdate = (updatedUser) => {
-        // if match -> replace with updated user
-        //else-> keep original user
         setUser((prev) =>
-            prev.map((u) =>
-                u.id === updatedUser.id ? updatedUser : u
-            ))
-        setMsg("data updated")
-        setSelectedUser(null)
+            prev.map((u) => u.id === updatedUser.id ? updatedUser : u)
+        )
+        setSelecteduser("")
+        setMsg("data Updated Successfully!!")
+
+        setTimeout(()=>{
+            setMsg("")
+        },3000)
     }
 
-    const handleDelete = async (id) => {
-        try {
-            await deleteUser(id);
-            //user ui 
-            setUser((prev) => prev.filter((u) => u.id !== id));
-            setMsg("data deleted")
+    const handleDelete =async(id)=>{
+        // console.log(id);
+        try{
+            await deleteUser(id)
+            setUser((prev)=>prev.filter((u)=>u.id !==id))
+            setMsg("user Deleted !!")
 
+            setTimeout(()=>{
+            setMsg("")
+        },3000)
         }
-        catch (error) {
-            console.log("oops");
-
+        catch(error){
+            console.log("oops something");
+            
         }
+        
     }
     return (
         <>
+            <h1>user list</h1>
             <ul>
                 {user.map((u) => (
-                    <li key={u.id}
-                        onClick={() => setSelectedUser(u)}
+                    <li key={u.id} onClick={() => setSelecteduser(u)}
+                        style={{ cursor: "pointer" }}
                     >{u.name}- {u.email}
-                        <button onClick={(e) => {
-                            e.stopPropagation();
-                            handleDelete(u.id);
-                        }}>delete</button>
+                    <button onClick={(e)=>{
+                        e.stopPropagation();
+                        handleDelete(u.id)}}>delete</button>
                     </li>
                 ))}
             </ul>
 
-            {selectedUser &&
-                <EditFormdata user={selectedUser} onUpdate={handleUpdate} />
-            }
+            {selectedUser && <EditFormdata user={selectedUser} onUpdate={handleUpdate} />}
+            
             {msg && <p>{msg}</p>}
         </>
     )

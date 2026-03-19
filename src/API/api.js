@@ -63,3 +63,13 @@ export const deleteUser = async (id) =>{
 }
 
 // fetch single user by ID
+export const fetchUserByID = async (id) =>{
+    try{
+        const response = await api.get(`/users/${id}`);
+        return response.data;
+    }
+    catch(error){
+        console.error("oops something is wrong", error)
+    }
+
+}

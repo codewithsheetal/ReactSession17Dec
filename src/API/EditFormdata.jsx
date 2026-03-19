@@ -1,32 +1,31 @@
 import React, { use, useEffect, useState } from 'react'
 import { updateUser } from './api';
 
-function EditFormdata({ user, onUpdate }) {
+function EditFormdata({user,onUpdate}) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-
+    // console.log(user);
+    
     useEffect(()=>{
         if(user){
-            setName(user.name || "");
-            setEmail(user.email || "");
+            setName(user.name || "")
+            setEmail(user.email || "")
         }
     },[user])
-
     const handleSubmit =async (e)=>{
         e.preventDefault();
 
         try{
-            const updatedUser = await updateUser(user.id ,{
+            const updatedUser = await updateUser(user.id,{
                 name,email
             })
+
             if(onUpdate){
                 onUpdate(updatedUser)
             }
         }
-
-
         catch(error){
-            console.log("oops");
+            console.log("oops!!");
             
         }
     }
