@@ -60,6 +60,7 @@ import GetProductlits from './onefiledata/GetProductlits'
 import GetAPIdata from './API/GetAPIdata'
 import PostAPI from './API/PostAPI'
 import EditAPI from './API/EditAPI'
+import CounterUI from './ReduxToolKit/CounterUI'
 
 function App() {
   
@@ -160,7 +161,9 @@ function App() {
 
       {/* <GetAPIdata/> */}
       {/* <PostAPI/> */}
-      <EditAPI/>
+      {/* <EditAPI/> */}
+
+      <CounterUI/>
 
     </>
   )
